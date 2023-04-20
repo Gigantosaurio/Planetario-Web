@@ -135,5 +135,5 @@ footer {
 
 .NavBar ul li:hover a .text {
    opacity: 1;
-   transform: translateY(-4px);
+   transform: translateY(-3px);
 }
