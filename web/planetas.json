@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "name": "Sol",
+        "description": "El Sol es la estrella central del sistema solar. En él ocurren reacciones nucleares que generan energía y luz.",
+        "category": "estrella",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "El Sol representa más del 99% de la masa total del sistema solar.",
+            "La temperatura en el núcleo del Sol es de alrededor de 15 millones de grados Celsius.",
+            "El Sol tiene una edad de alrededor de 4.6 mil millones de años."
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Mercurio",
+        "description": "Mercurio es el planeta más cercano al Sol. Es el más pequeño y el segundo más caliente del sistema solar.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Un día en Mercurio dura 176 días terrestres.",
+            "Mercurio tiene una temperatura diurna de alrededor de 430 grados Celsius y una temperatura nocturna de alrededor de -180 grados Celsius.",
+            "Mercurio no tiene atmósfera significativa debido a su baja gravedad y su proximidad al Sol."
+        ],
+        "moons": []
+    },
+    {
+        "id": 3,
+        "name": "Venus",
+        "description": "Venus es el segundo planeta más cercano al Sol y es el planeta más caliente del sistema solar. Es similar en tamaño y composición a la Tierra, pero su atmósfera densa lo hace inhóspito para la vida tal como la conocemos.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Un día en Venus dura más tiempo que un año en Venus.",
+            "La atmósfera de Venus es principalmente dióxido de carbono, lo que provoca un efecto invernadero extremo.",
+            "La superficie de Venus está cubierta por volcanes, montañas y llanuras de lava."
+        ],
+        "moons": []
+    },
+    {
+        "id": 4,
+        "name": "Tierra",
+        "description": "La Tierra es el tercer planeta desde el Sol y es el único planeta conocido por albergar vida. Es el más denso y el quinto más grande de los planetas rocosos del sistema solar.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "La Tierra tiene una atmósfera que protege la vida de la radiación cósmica y del impacto de meteoritos.",
+            "El agua cubre alrededor del 71% de la superficie de la Tierra.",
+            "La Tierra tiene un campo magnético que protege su atmósfera y superficie de la radiación solar."
+        ],
+        "moons": [
+            {
+                "name": "Luna",
+                "description": "La Luna es el único satélite natural de la Tierra. Es el quinto satélite más grande del sistema solar y es un objeto rocoso y estéril.",
+                "size": "3.474 km de diámetro",
+                "distance": "384.400 km"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Marte",
+        "description": "Marte es el cuarto planeta desde el Sol y es el planeta más cercano a la Tierra. Tiene una atmósfera delgada y una superficie rocosa y desértica con cañones, montañas y valles.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Marte tiene el Monte Olimpo, el volcán más alto del sistema solar.",
+            "La superficie de Marte está cubierta por óxido de hierro, lo que le da su característico color rojo.",
+            "Se han detectado evidencias de agua líquida en la superficie de Marte en algunos momentos."
+        ],
+        "moons": [
+            {
+                "name": "Fobos",
+                "description": "Fobos es la luna más grande de Marte. Tiene un diámetro de aproximadamente 22 kilómetros y su superficie está cubierta de cráteres.",
+                "size": "22 km de diámetro",
+                "distance": "9.378 km"
+            },
+            {
+                "name": "Deimos",
+                "description": "Deimos es la luna más pequeña de Marte. Tiene un diámetro de aproximadamente 12 kilómetros y su superficie también está cubierta de cráteres.",
+                "size": "12 km de diámetro",
+                "distance": "23.460 km"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Júpiter",
+        "description": "Júpiter es el quinto planeta desde el Sol y es el planeta más grande del sistema solar. Es un gigante gaseoso con una atmósfera densa y turbulenta.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Júpiter tiene la Gran Mancha Roja, una tormenta gigante que ha durado al menos 350 años.",
+            "Júpiter tiene al menos 79 lunas conocidas, incluyendo las cuatro más grandes llamadas Io, Europa, Ganímedes y Calisto.",
+            "La gravedad de Júpiter es tan fuerte que puede afectar a la órbita de otros planetas del sistema solar."
+        ],
+        "moons": [
+            {
+                "name": "Io",
+                "description": "Io es una de las lunas más grandes y cercanas de Júpiter. Es el objeto volcánico más activo del sistema solar.",
+                "size": "3.643 km de diámetro",
+                "distance": "421.700 km"
+            },
+            {
+                "name": "Europa",
+                "description": "Europa es una de las lunas más grandes de Júpiter y se cree que tiene un océano debajo de su superficie helada.",
+                "size": "3.122 km de diámetro",
+                "distance": "671.034 km"
+            },
+            {
+                "name": "Ganímedes",
+                "description": "Ganímedes es la luna más grande del sistema solar y es más grande que Mercurio. Tiene una superficie cubierta de cráteres y surcada por grietas y cañones.",
+                "size": "5.262 km de diámetro",
+                "distance": "1.070.400 km"
+            },
+            {
+                "name": "Calisto",
+                "description": "Calisto es una de las lunas más grandes de Júpiter y es el tercer objeto más grande del sistema solar después de Ganímedes y Titán. Tiene una superficie arrugada y cubierta de cráteres.",
+                "size": "4.820 km de diámetro",
+                "distance": "1.882.700 km"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Saturno",
+        "description": "Saturno es el sexto planeta desde el Sol y es conocido por sus anillos prominentes. Es similar en composición a Júpiter y es otro gigante gaseoso.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Los anillos de Saturno están compuestos principalmente de partículas de hielo y roca.",
+            "Saturno tiene al menos 82 lunas conocidas, incluyendo Titán, la única luna conocida en el sistema solar con una atmósfera densa.",
+            "La densidad de Saturno es tan baja que si hubiera un océano lo suficientemente grande, Saturno flotaría en él debido a su baja densidad."
+        ],
+        "moons": [
+            {
+                "name": "Mimas",
+                "description": "Mimas es una de las lunas más pequeñas de Saturno. Tiene un gran cráter en su superficie que le da la apariencia de la Estrella de la Muerte de la película de Star Wars.",
+                "size": "396 km de diámetro",
+                "distance": "185.520 km"
+            },
+            {
+                "name": "Encélado",
+                "description": "Encélado es una de las lunas más interesantes de Saturno. Tiene una superficie cubierta de hielo y géiseres que expulsan agua al espacio.",
+                "size": "504 km de diámetro",
+                "distance": "238.040 km"
+            },
+            {
+                "name": "Titán",
+                "description": "Titán es la luna más grande de Saturno y tiene una atmósfera espesa compuesta principalmente por nitrógeno. Se cree que podría haber océanos de metano líquido en su superficie.",
+                "size": "5.150 km de diámetro",
+                "distance": "1.221.870 km"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Urano",
+        "description": "Urano es el séptimo planeta desde el Sol y es un gigante de hielo compuesto principalmente de agua, metano y amoníaco. Su eje de rotación está inclinado en un ángulo de casi 98 grados en relación al plano de su órbita, lo que lo hace único en el sistema solar.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Urano tiene 27 lunas conocidas y un sistema de anillos.",
+            "Debido a su inclinación axial, Urano experimenta cambios estacionales extremos y cada polo está apuntando hacia el Sol o lejos de él durante casi un cuarto de su año orbital.",
+            "Urano fue descubierto en 1781 por William Herschel."
+        ],
+        "moons": [
+            {
+                "name": "Miranda",
+                "description": "Miranda es una de las lunas más pequeñas de Urano y tiene una superficie muy accidentada con acantilados y cañones.",
+                "size": "472 km de diámetro",
+                "distance": "129.390 km"
+            },
+            {
+                "name": "Ariel",
+                "description": "Ariel es una de las lunas más grandes de Urano y tiene una superficie cubierta de cráteres y cañones.",
+                "size": "1.158 km de diámetro",
+                "distance": "191.020 km"
+            },
+            {
+                "name": "Umbriel",
+                "description": "Umbriel es una de las lunas más grandes de Urano y tiene una superficie cubierta de cráteres y surcada por valles.",
+                "size": "1.169 km de diámetro",
+                "distance": "266.300 km"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Neptuno",
+        "description": "Neptuno es el octavo planeta desde el Sol y es un gigante de hielo compuesto principalmente de agua, metano y amoníaco. Es similar a Urano en muchos aspectos, incluyendo su inclinación axial extrema.",
+        "category": "planeta",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Neptuno tiene 14 lunas conocidas y un sistema de anillos.",
+            "Neptuno tiene la velocidad de viento más rápida en el sistema solar, con velocidades de hasta 2,100 kilómetros por hora.",
+            "Neptuno fue descubierto en 1846 por Urbain Le Verrier y Johann Galle."
+        ],
+        "moons": [
+            {
+                "name": "Tritón",
+                "description": "Tritón es la luna más grande de Neptuno y tiene una superficie cubierta de hielo y geisers que expulsan nitrógeno líquido.",
+                "size": "2.700 km de diámetro",
+                "distance": "354.800 km"
+            },
+            {
+                "name": "Nereida",
+                "description": "Nereida es una de las lunas más pequeñas de Neptuno y tiene una órbita muy excéntrica que la lleva a acercarse y alejarse mucho del planeta.",
+                "size": "340 km de diámetro",
+                "distance": "5.513.400 km"
+            },
+            {
+                "name": "Proteo",
+                "description": "Proteo es una de las lunas más grandes de Neptuno y tiene una superficie muy irregular con cráteres y montañas.",
+                "size": "424 km de diámetro",
+                "distance": "117.647 km"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Plutón",
+        "description": "Plutón es un planeta enano que se encuentra en la región transneptuniana del sistema solar. Fue clasificado como un planeta hasta 2006, cuando fue reclasificado como un planeta enano.",
+        "category": "planeta enano",
+        "picture": "https://imagen.jpg",
+        "images": [
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg",
+            "https://imagen.jpg"
+        ],
+        "facts": [
+            "Plutón tiene cinco lunas conocidas, la más grande de las cuales se llama Caronte.",
+            "Plutón es parte de la región del sistema solar llamada Cinturón de Kuiper, que contiene muchos objetos similares a Plutón.",
+            "Plutón fue descubierto en 1930 por Clyde Tombaugh."
+        ],
+        "moons": [
+            {
+                "name": "Caronte",
+                "description": "Caronte es la luna más grande de Plutón y está tan cerca que ambos cuerpos orbitan alrededor de un punto en el espacio que está fuera de Plutón. Tiene una superficie cubierta de hielo y cráteres.",
+                "size": "1.212 km de diámetro",
+                "distance": "17.536 km"
+            },
+            {
+                "name": "Nix",
+                "description": "Nix es una de las lunas más pequeñas de Plutón y tiene una órbita muy excéntrica y caótica. Su superficie está cubierta de hielo y tiene una forma irregular.",
+                "size": "49 km de diámetro",
+                "distance": "48.700 km"
+            },
+            {
+                "name": "Hidra",
+                "description": "Hidra es otra de las lunas más pequeñas de Plutón y tiene una órbita menos excéntrica que Nix. Su superficie también está cubierta de hielo y tiene una forma irregular.",
+                "size": "31 km de diámetro",
+                "distance": "64.749 km"
+            }
+        ]
+    }
+]
