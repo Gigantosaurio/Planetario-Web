@@ -48,12 +48,12 @@ header {
 }
 
 
-:root
-{
-    --clr: #222327; /*Esto es basicamente declarar una variable,
+:root {
+    --clr: #222327;
+    /*Esto es basicamente declarar una variable,
      se declara con los dos -- y despues el nombre personalizado,
      esto lo hacemos porque vamos a usar reiteradamente esta variable*/
-}  
+}
 
 
 footer {
@@ -64,6 +64,7 @@ footer {
     align-items: center;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .NavBar {
@@ -74,13 +75,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .NavBar ul {
     /*Aqui estamos editando el contenido de la ul (unordered list)*/
     display: flex;
-
     width: 350px;
 }
 
@@ -103,6 +103,7 @@ footer {
     width: 100%;
     text-align: center;
     font-weight: 500;
+
 }
 
 .NavBar ul li a .icono {
@@ -118,4 +119,21 @@ footer {
 
 .NavBar ul li:hover a .icono {
     transform: translateY(-35px);
+}
+
+.NavBar ul li a .text {
+    /*En esta vamos a modificar los divs llamados icono*/
+    position: absolute;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    color: var(--clr);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.NavBar ul li:hover a .text {
+   opacity: 1;
+   transform: translateY(-4px);
 }
