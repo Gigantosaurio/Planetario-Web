@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+header {
+    position: absolute;
+    color: white;
+    font-size: 40vh;
+    font-family: 'Mukta Vaani', sans-serif;
+    width: 99vw;
+}
+
+
+.Solar {
+    margin-top: -3%;
+    display: flex;
+    padding-left: 100px;
+    height: 50vh;
+    /*background-color: aqua;*/
+
+}
+
+.planetario {
+    height: 100%;
+    width: 100vh;
+    background-color: chartreuse;
+}
+
+.System {
+    margin-top: -100px;
+    padding-left: 400px;
+    /*background-color: red;*/
+}
+
+
+#fondoAnimado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+:root
+{
+    --clr: #222327; /*Esto es basicamente declarar una variable,
+     se declara con los dos -- y despues el nombre personalizado,
+     esto lo hacemos porque vamos a usar reiteradamente esta variable*/
+}  
+
+
+footer {
+    padding-top: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.NavBar {
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.NavBar ul {
+    /*Aqui estamos editando el contenido de la ul (unordered list)*/
+    display: flex;
+
+    width: 350px;
+}
+
+.NavBar ul li {
+    /*Aqui estamos editando el contenido de la propia lista*/
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 70px;
+    z-index: 1;
+}
+
+.NavBar ul li a {
+    /*Aqui estamos editando el contenido de <a> que son hipervinculos, que nos redirigiran a las otras paginas*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.NavBar ul li a .icono {
+    /*En esta vamos a modificar los divs llamados icono*/
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.NavBar ul li:hover a .icono {
+    transform: translateY(-35px);
+}
