@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Solar System</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+
+</head>
+
+<body>
+
+    <!-- Esto es el video que se reproduce de fondo en la landing -->
+    <div>
+        <video id="fondoAnimado" poster="img/space.jpg" autoplay muted loop>
+            <source src="img/mainBG.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!-- Este apartado son las letras en grande que dicen Solar system -->
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@700;800&display=swap" rel="stylesheet">
+
+        <div class="Solar">
+            Solar
+            <div class="planetario">
+
+            </div>
+        </div>
+
+        <div class="System">
+            system
+        </div>
+    </header>
+
+
+
+
+    <!-- Esta es la barra de navegacion inferior -->
+    <footer>
+        <div class="NavBar">
+
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icono">
+                            <!-- Esta es la linea de comando que implementa le icono de la casa -->
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icono">
+                            <ion-icon name="image-outline"></ion-icon>
+                        </span>
+                        <span class="text">Gallery</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icono">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icono">
+                            <ion-icon name="planet-outline"></ion-icon>
+                        </span>
+                        <span class="text">Planets</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Este texto de script de aqui es para que funcionen los iconos que vamos a imrpotar de la web -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src='index.js'></script>
+</body>
+
+</html>
