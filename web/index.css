@@ -6,6 +6,8 @@
 
 }
 
+/*---------------------------HEADER---------------------------*/
+
 header {
     position: absolute;
     color: white;
@@ -36,6 +38,7 @@ header {
     /*background-color: red;*/
 }
 
+/*---------------------------FONDO---------------------------*/
 
 #fondoAnimado {
     position: absolute;
@@ -47,6 +50,7 @@ header {
     z-index: -1;
 }
 
+/*---------------------------FOOTER---------------------------*/
 
 :root {
     --clr: #222327;
@@ -75,13 +79,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    justify-content: flex-start;
+    padding-left: 2vw;
 }
 
 .NavBar ul {
     /*Aqui estamos editando el contenido de la ul (unordered list)*/
     display: flex;
     width: 350px;
+    gap: 2rem;
+
 }
 
 .NavBar ul li {
@@ -103,7 +110,6 @@ footer {
     width: 100%;
     text-align: center;
     font-weight: 500;
-
 }
 
 .NavBar ul li a .icono {
@@ -111,13 +117,13 @@ footer {
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
     transition: 0.5s;
     color: var(--clr);
 }
 
-.NavBar ul li:hover a .icono {
+.NavBar ul li.active a .icono {
     transform: translateY(-35px);
 }
 
@@ -125,7 +131,7 @@ footer {
     /*En esta vamos a modificar los divs llamados icono*/
     position: absolute;
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 0.9em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     color: var(--clr);
@@ -133,7 +139,18 @@ footer {
     transform: translateY(20px);
 }
 
-.NavBar ul li:hover a .text {
-   opacity: 1;
-   transform: translateY(-3px);
+.NavBar ul li.active a .text {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.indicator {
+    position: absolute;
+    top: -110%;
+    width: 70px;
+    height: 70px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
 }
