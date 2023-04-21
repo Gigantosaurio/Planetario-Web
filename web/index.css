@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 
 }
 
@@ -41,19 +40,18 @@ header {
 /*---------------------------FONDO---------------------------*/
 
 #fondoAnimado {
-    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
-    min-width: 100%;
-    min-height: 100%;
     z-index: -1;
 }
 
 /*---------------------------FOOTER---------------------------*/
 
 :root {
-    --clr: #222327;
+    --clr: #000000;
     /*Esto es basicamente declarar una variable,
      se declara con los dos -- y despues el nombre personalizado,
      esto lo hacemos porque vamos a usar reiteradamente esta variable*/
@@ -61,26 +59,28 @@ header {
 
 
 footer {
-    padding-top: 95vh;
+    padding-top: 94.2vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-
+    overflow: hidden;
+    
 }
 
 .NavBar {
     position: relative;
     width: 100vw;
-    height: 50px;
+    height: 54px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: flex-start;
     padding-left: 2vw;
+    padding-bottom: 0.75vh;
 }
 
 .NavBar ul {
@@ -96,7 +96,7 @@ footer {
     position: relative;
     list-style: none;
     width: 60px;
-    height: 70px;
+    height: 60px;
     z-index: 1;
 }
 
@@ -121,16 +121,17 @@ footer {
     text-align: center;
     transition: 0.5s;
     color: var(--clr);
+    
 }
 
-.NavBar ul li.active a .icono {
-    transform: translateY(-35px);
+.NavBar ul li:hover a .icono {
+    transform: translateY(-43px);
 }
 
 .NavBar ul li a .text {
     /*En esta vamos a modificar los divs llamados icono*/
     position: absolute;
-    font-weight: 400;
+    font-weight: 520;
     font-size: 0.9em;
     letter-spacing: 0.05em;
     transition: 0.5s;
@@ -139,14 +140,16 @@ footer {
     transform: translateY(20px);
 }
 
-.NavBar ul li.active a .text {
+.NavBar ul li:hover a .text {
     opacity: 1;
-    transform: translateY(-3px);
+    transform: translateY(6px);
 }
 
-.indicator {
+.bola {
+    /*Esta es la bolita que rodea al icono*/
     position: absolute;
-    top: -110%;
+    top: -100%;
+    left: 1.75vw;
     width: 70px;
     height: 70px;
     background: #29fd53;
