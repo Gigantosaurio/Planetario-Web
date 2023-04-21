@@ -1,0 +1,12 @@
+//Con esta linea loq ue hacemos es delcarar una variable bajo el nombre de list
+//que luego buscamos en el html bajo el nombre de class = "list" o .list
+const list = document.querySelector('.list');
+
+function activeLink(){ //en esta linea delcaramos una funcion llamada activeLink
+    list.forEach((item)=> 
+    item.classList.remove('active')); //en estas dos lineas lo que hacemos es surcar toda la lista como si fuera un array removiendo la propiedad active de ellos, para que el circulo baje
+    this.classList.add('active');
+}
+
+list.forEach((item) =>
+item.addEventListener('onclick',activeLink));
