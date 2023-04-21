@@ -124,6 +124,10 @@ footer {
 
 }
 
+/*Este apartado de css esta en .active y no en :hover porque queremos que
+permanezca activado cuando estemos en esa pestaña, ademas es un "atributo"
+que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
+
 .NavBar ul li.active a .icono {
     transform: translateY(-32px);
 }
