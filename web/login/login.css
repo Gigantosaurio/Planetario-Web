@@ -1,0 +1,49 @@
+/* ----------------------------------------GLOBALES------------------------------------- */
+
+*{
+    margin: 0;
+}
+
+
+/* ----------------------------------------LOGIN-REGISTER-GLOBALES------------------------------------- */
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: red;
+}
+
+.form-box{
+    border: 1px solid black; /*marker, descomentar para ver los border del form*/
+    height: 50%;
+    width: 15%;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.icon{
+    display: flex;
+    float: right;
+}
+
+/* ----------------------------------------LOGIN------------------------------------- */
+.login{
+  background-color: #bbb;
+  color: black;
+  display: flex;
+}
+
+
+
+/* ----------------------------------------REGISTER------------------------------------- */
+.register{
+    background-color: #2980b9;
+    color: white;
+  }
