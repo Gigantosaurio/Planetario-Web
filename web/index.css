@@ -129,7 +129,8 @@ permanezca activado cuando estemos en esa pestaña, ademas es un "atributo"
 que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
 
 .NavBar ul li.active a .icono {
-    transform: translateY(-32px);
+    transform: translateY(-32px) scale(115%); 
+    color: #fff;
 }
 
 .NavBar ul li a .text {
@@ -156,7 +157,8 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     left: 1.7vw;
     width: 72px;
     height: 72px;
-    background: #29fd53;
+    background: #000000;
+    filter: blur(2px);
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
@@ -165,7 +167,7 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
 /*Tanto el ::after como el ::before nos sirven para añadir
 contenido a la pagina sin necesidad de meterlo en html,
 lo hemos usado aqui porque es correcto hacerlo cuando vas a integrar
-box-shadows, y aqui hacemos las cosas bien 🙏*/
+box-shadows, y aqui hacemos las cosas bien 🙏☻♥♦☺•◘♣☻♥♠9○████■████*/
 
 .bola::before {
 
@@ -192,4 +194,30 @@ box-shadows, y aqui hacemos las cosas bien 🙏*/
     background: transparent;
     border-top-left-radius: 80px;
     box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+/* Estas lineas de codigo de css sirven para identificar
+a los "hijos/childs" de la NavBar, siendo estos la lista
+de iconos, todo esto lo tuve que buscar por youtube
+porque no tenia ni puta idea de hacerlo, pero ahora si comprendo 🥶 */
+
+.NavBar ul li:nth-child(1).active~.bola {
+    transform: translateX(calc(91px * 0));
+    /*Aqui la palabra reservada calc es para hacer calculos
+    en este caso el calculo individual para cada elemento de la lista,
+    por ejemplo aqui multiplica 92px que es la distancia entre cada
+    icono por 0, en el siguiente por 1, asi se separara 91 px,
+    en la siguiente el doble...*/
+}
+
+.NavBar ul li:nth-child(2).active~.bola {
+    transform: translateX(calc(91px * 1));
+}
+
+.NavBar ul li:nth-child(3).active~.bola {
+    transform: translateX(calc(91px * 2));
+}
+
+.NavBar ul li:nth-child(4).active~.bola {
+    transform: translateX(calc(91px * 3));
 }
