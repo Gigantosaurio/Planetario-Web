@@ -1,7 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".square", {
-    x: 700,
-    duration: 3,
-    scrollTrigger: ".square2"
+    scrollTrigger: {
+        trigger: ".div1",
+        start: "top 100%",
+        end: "bottom 20%",
+        scrub: true,
+        markers: true,
+        toggleActions: "restart pause reverse pause"
+    },
+    x: 500,
+    y: 1000,
+    rotation: 360,
+    duration: 3
 })
