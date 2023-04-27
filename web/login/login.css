@@ -2,9 +2,21 @@
     margin: 0;
 }
 
+
+/*---------------------------FONDO---------------------------*/
+
+#fondoAnimado {
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .container{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,4 +135,175 @@ body{
 .input-container input:valid ~ label{
 	top:-12px;
 	font-size:12px;
+}
+
+
+
+/*---------------------------FOOTER---------------------------*/
+
+:root {
+    --clr: #000000;
+    /*Esto es basicamente declarar una variable,
+     se declara con los dos -- y despues el nombre personalizado,
+     esto lo hacemos porque vamos a usar reiteradamente esta variable*/
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+
+}
+
+.NavBar {
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2vw;
+    padding-bottom: 0.75vh;
+}
+
+.NavBar ul {
+    /*Aqui estamos editando el contenido de la ul (unordered list)*/
+    display: flex;
+    width: 350px;
+    gap: 2rem;
+
+}
+
+.NavBar ul li {
+    /*Aqui estamos editando el contenido de la propia lista*/
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+
+.NavBar ul li a {
+    /*Aqui estamos editando el contenido de <a> que son hipervinculos, que nos redirigiran a las otras paginas*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.NavBar ul li a .icono {
+    /*En esta vamos a modificar los divs llamados icono*/
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.8em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+
+}
+
+/*Este apartado de css esta en .active y no en :hover porque queremos que
+permanezca activado cuando estemos en esa pestaña, ademas es un "atributo"
+que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
+
+.NavBar ul li.active a .icono {
+    transform: translateY(-32px) scale(115%); 
+    color: #fff;
+}
+
+.NavBar ul li a .text {
+    /*En esta vamos a modificar los divs llamados icono*/
+    position: absolute;
+    font-weight: 520;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    color: var(--clr);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.NavBar ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.bola {
+    /*Esta es la bolita que rodea al icono*/
+    position: absolute;
+    top: -75%;
+    left: 3.7vw;
+    width: 72px;
+    height: 72px;
+    background: #000000;
+    filter: blur(2px);
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+
+/*Tanto el ::after como el ::before nos sirven para añadir
+contenido a la pagina sin necesidad de meterlo en html,
+lo hemos usado aqui porque es correcto hacerlo cuando vas a integrar
+box-shadows, y aqui hacemos las cosas bien 🙏☻♥♦☺•◘♣☻♥♠9○████■████*/
+
+.bola::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -27px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-right-radius: 80px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+
+.bola::after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    right: -27px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-left-radius: 80px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+/* Estas lineas de codigo de css sirven para identificar
+a los "hijos/childs" de la NavBar, siendo estos la lista
+de iconos, todo esto lo tuve que buscar por youtube
+porque no tenia ni puta idea de hacerlo, pero ahora si comprendo 🥶 */
+
+.NavBar ul li:nth-child(1).active~.bola {
+    transform: translateX(calc(91px * 0));
+    /*Aqui la palabra reservada calc es para hacer calculos
+    en este caso el calculo individual para cada elemento de la lista,
+    por ejemplo aqui multiplica 92px que es la distancia entre cada
+    icono por 0, en el siguiente por 1, asi se separara 91 px,
+    en la siguiente el doble...*/
+}
+
+.NavBar ul li:nth-child(2).active~.bola {
+    transform: translateX(calc(91px * 1));
+}
+
+.NavBar ul li:nth-child(3).active~.bola {
+    transform: translateX(calc(91px * 2));
+}
+
+.NavBar ul li:nth-child(4).active~.bola {
+    transform: translateX(calc(91px * 3));
 }

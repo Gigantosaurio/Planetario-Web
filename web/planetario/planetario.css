@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgb(255, 255, 255)
+    );
+}
+
+.contenedor__animacion{
+    height: 1000vh;
+}
+
+.sol{
+    background-color: red;
+    width: 10vw;
+    height: 10vh;
+}
+
+#sol img{
+    width: 40vw;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+}
+#mercurio img{
+    width: 5vw;
+    position: absolute;
+    top: 90vh;
+    left: 100vw;
+}
+#venus img{
+    width: 10vw;
+    position: absolute;
+    top: 160vh;
+    left: 100vw;
+}
+#tierra img{
+    width: 10vw;
+    position: absolute;
+    top: 230vh;
+    left: 100vw;}
+#marte img{
+    width: 8vw;
+    position: absolute;
+    top: 310vh;
+    left: 100vw;}
+#jupiter img{
+    width: 35vw;
+    position: absolute;
+    top: 410vh;
+    left: 100vw;}
+#saturno img{
+    width: 30vw;
+    position: absolute;
+    top: 510vh;
+    left: 100vw;}
+#urano img{
+    width: 12vw;
+    position: absolute;
+    top: 610vh;
+    left: 100vw;}
+#neptuno img{
+    width: 11vw;
+    position: absolute;
+    top: 710vh;
+    left: 100vw;}
+#pluton img{
+    width: 5vw;
+    position: absolute;
+    top: 810vh;
+    left: 100vw;}
+
+
+/*
+#sol img{
+    width: 40vw;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+}
+#mercurio img{
+    width: 5vw;
+    position: absolute;
+    top: 80vh;
+    left: 40vw;
+}
+#venus img{
+    width: 10vw;
+    position: absolute;
+    top: 100vh;
+    left: 50vw;
+
+}
+#tierra img{
+    width: 10vw;
+    position: absolute;
+    top: 120vh;
+    left: 60vw;
+}
+#marte img{
+    width: 8vw;
+    position: absolute;
+    top: 140vh;
+    left: 70vw;
+}
+#jupiter img{
+    width: 35vw;
+    position: absolute;
+    top: 140vh;
+    left: 70vw;
+}
+#saturno img{
+    width: 30vw;
+    position: absolute;
+    top: 185vh;
+    left: 90vw;
+}
+#urano img{
+    width: 12vw;
+    position: absolute;
+    top: 215vh;
+    left: 110vw;
+}
+#neptuno img{
+    width: 11vw;
+    position: absolute;
+    top: 245vh;
+    left: 125vw;
+}
+#pluton img{
+    width: 5vw;
+    position: absolute;
+    top: 265vh;
+    left: 135vw;
+}
+*/
