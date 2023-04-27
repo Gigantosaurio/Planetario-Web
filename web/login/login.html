@@ -13,6 +13,15 @@
 </head>
 
 <body>
+
+    <!-- Esto es el video que se reproduce de fondo en la landing -->
+    <div id="fondoAnimado">
+        <video  autoplay muted loop>
+            <source src="../img/mainBG.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Aquí comienza el bloque del Login Register -->
     <div class="container">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -61,6 +70,58 @@
             </div>
           </div>
     </div>
+
+    <!-- Esta es la barra de navegacion inferior -->
+    <footer>
+        <div class="NavBar">
+
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <!-- Aqui metemos las referencias a las otras paginas -->
+                        <span class="icono">
+                            <!-- Esta es la linea de comando que implementa le icono de la casa -->
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icono">
+                            <ion-icon name="image-outline"></ion-icon>
+                        </span>
+                        <span class="text">Gallery</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="login/login.html">
+                        <span class="icono">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icono">
+                            <ion-icon name="planet-outline"></ion-icon>
+                        </span>
+                        <span class="text">Planets</span>
+                    </a>
+                </li>
+                <div class="bola"></div>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Este texto de script de aqui es para que funcionen los iconos que vamos a importar de la web -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
     <script src='login.js' defer></script>
