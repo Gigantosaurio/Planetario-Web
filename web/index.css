@@ -84,6 +84,8 @@ body {
 }
 
 
+/*meter un overflow hidden pero solo a la parte de abajo ☢️☢️☢️☢️*/
+
 footer {
     /* padding-top: 94.2vh; */
     width: 100%;
@@ -93,7 +95,7 @@ footer {
     /* min-height: 100vh; */
     font-family: 'Poppins', sans-serif;
     /* overflow: hidden; */
-
+ 
 }
 
 .NavBar {
@@ -118,7 +120,6 @@ footer {
     
 }
 
-/*PROBLEMA DE LONGITUD ☢️☢️☢️☢️*/
 
 .NavBar ul li {
     /*Aqui estamos editando el contenido de la propia lista*/
