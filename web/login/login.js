@@ -11,7 +11,7 @@ togglers.forEach(element => {
 
 // script del footer
 
-//Con esta linea lo que hacemos es delcarar una variable bajo el nombre de list
+//Con esta linea loq ue hacemos es delcarar una variable bajo el nombre de list
 //que luego buscamos en el html bajo el nombre de class = "list" o .list
 const list = document.querySelectorAll('.list');
 //el puto querySelectorAll es lo que me lleva jodiendo toda la puta mañana

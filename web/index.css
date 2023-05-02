@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
@@ -58,7 +57,7 @@ header {
     left: 0;
     z-index: -1;
     min-width: 100%;
-    min-height: 100%; 
+    min-height: 100%;
     background-color: burlywood;
 }
 
@@ -66,12 +65,12 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-} 
+}
 
 body {
     width: 100%;
-    height: 100%; 
-    background-color: red;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 /*---------------------------FOOTER---------------------------*/
@@ -87,7 +86,7 @@ body {
 /*meter un overflow hidden pero solo a la parte de abajo ☢️☢️☢️☢️*/
 
 footer {
-    /* padding-top: 94.2vh; */
+    padding-top: 0.1vh; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,7 +94,7 @@ footer {
     /* min-height: 100vh; */
     font-family: 'Poppins', sans-serif;
     /* overflow: hidden; */
- 
+
 }
 
 .NavBar {
@@ -109,7 +108,7 @@ footer {
     justify-content: flex-start;
     padding-left: 2vw;
     padding-bottom: 0.75vh;
-    
+
 }
 
 .NavBar ul {
@@ -117,7 +116,7 @@ footer {
     display: flex;
     /* width: 350px; */
     gap: 2rem;
-    
+
 }
 
 
@@ -128,7 +127,7 @@ footer {
     width: 60px;
     height: 60px;
     z-index: 1;
-    
+
 }
 
 .NavBar ul li a {
@@ -141,7 +140,7 @@ footer {
     width: 100%;
     text-align: center;
     font-weight: 500;
-    
+
 }
 
 .NavBar ul li a .icono {
@@ -164,7 +163,7 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     transform: translateY(-32px) scale(115%);
     color: #fff;
     /*Colo de los iconos*/
-    
+
 }
 
 .NavBar ul li a .text {
@@ -177,13 +176,13 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     color: var(--clr);
     opacity: 0;
     transform: translateY(20px);
-    
+
 }
 
 .NavBar ul li.active a .text {
     opacity: 1;
     transform: translateY(10px);
-    
+
 }
 
 .bola {
@@ -198,7 +197,7 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
-    
+
 }
 
 /*Tanto el ::after como el ::before nos sirven para añadir
@@ -217,7 +216,7 @@ box-shadows, y aqui hacemos las cosas bien 🙏☻♥♦☺•◘♣☻♥♠9�
     background: transparent;
     border-top-right-radius: 80px;
     box-shadow: 0px -10px 0 0 var(--clr);
-    
+
 }
 
 
@@ -232,7 +231,7 @@ box-shadows, y aqui hacemos las cosas bien 🙏☻♥♦☺•◘♣☻♥♠9�
     background: transparent;
     border-top-left-radius: 80px;
     box-shadow: 0px -10px 0 0 var(--clr);
-    
+
 }
 
 /* Estas lineas de codigo de css sirven para identificar
@@ -241,7 +240,7 @@ de iconos, todo esto lo tuve que buscar por youtube
 porque no tenia ni puta idea de hacerlo, pero ahora si comprendo 🥶 */
 
 .NavBar ul li:nth-child(1).active~.bola {
-    
+
     transform: translateX(calc(91px * 0));
     /*Aqui la palabra reservada calc es para hacer calculos
     en este caso el calculo individual para cada elemento de la lista,
