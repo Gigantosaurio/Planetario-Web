@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
 }
 
@@ -14,7 +14,7 @@
     z-index: -1;
 }
 
-.container{
+.container {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -43,7 +43,8 @@
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -52,7 +53,7 @@
     transform-style: preserve-3d;
 }
 
-.toggler{
+.toggler {
     color: white;
     cursor: pointer;
 }
@@ -60,81 +61,81 @@
 /***********************************************FORMS***********************************************/
 
 
-body{
-	background-position: center;
+body {
+    background-position: center;
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover;
-	min-height: 100vh;
-	font-family: 'Noto Sans', sans-serif;
+    min-height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-.text-center{
-	color: #fff;
+.text-center {
+    color: #fff;
     font-size: 23px;
     margin: -50px 0 80px 0;
     display: block;
     text-align: center;
 }
 
-.box{
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform: translate(-50%,-50%);
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.89);
-	border-radius:3px;
-	padding:70px 100px;
+    border-radius: 3px;
+    padding: 70px 100px;
 }
 
-.input-container{
-	position:relative;
-	margin-bottom:25px;
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
 }
 
-.input-container label{
-	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
-	color:#fff;
-	transition: all 0.5s ease-in-out;
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
 }
 
-.input-container input{
-  border:0;
-  border-bottom:1px solid #555;
-  background:transparent;
-  width:100%;
-  padding:8px 0 5px 0;
-  font-size:16px;
-  color:#fff;
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
 }
 
-.input-container input:focus{
- border:none;
- outline:none;
- border-bottom:1px solid #e74c3c;
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e74c3c;
 }
 
-.btn{
-	color:#fff;
-	background-color:#e74c3c;
-	outline: none;
+.btn {
+    color: #fff;
+    background-color: #e74c3c;
+    outline: none;
     border: 0;
     color: #fff;
-	padding:10px 20px;
-	text-transform:uppercase;
-	margin-top:50px;
-	border-radius:2px;
-	cursor:pointer;
-	position:relative;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
 }
 
-.input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
 }
 
 
@@ -149,19 +150,24 @@ body{
 }
 
 
+/*meter un overflow hidden pero solo a la parte de abajo ☢️☢️☢️☢️*/
+
 footer {
+    /* padding-top: 94.2vh; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* min-height: 100vh; */
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
 .NavBar {
     position: relative;
     width: 100vw;
-    height: 5vh;
+    height: 54px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -169,15 +175,17 @@ footer {
     justify-content: flex-start;
     padding-left: 2vw;
     padding-bottom: 0.75vh;
+
 }
 
 .NavBar ul {
     /*Aqui estamos editando el contenido de la ul (unordered list)*/
     display: flex;
-    width: 350px;
+    /* width: 350px; */
     gap: 2rem;
 
 }
+
 
 .NavBar ul li {
     /*Aqui estamos editando el contenido de la propia lista*/
@@ -186,6 +194,7 @@ footer {
     width: 60px;
     height: 60px;
     z-index: 1;
+
 }
 
 .NavBar ul li a {
@@ -198,6 +207,7 @@ footer {
     width: 100%;
     text-align: center;
     font-weight: 500;
+
 }
 
 .NavBar ul li a .icono {
@@ -217,8 +227,10 @@ permanezca activado cuando estemos en esa pestaña, ademas es un "atributo"
 que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
 
 .NavBar ul li.active a .icono {
-    transform: translateY(-32px) scale(115%); 
+    transform: translateY(-32px) scale(115%);
     color: #fff;
+    /*Colo de los iconos*/
+
 }
 
 .NavBar ul li a .text {
@@ -231,18 +243,20 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     color: var(--clr);
     opacity: 0;
     transform: translateY(20px);
+
 }
 
 .NavBar ul li.active a .text {
     opacity: 1;
     transform: translateY(10px);
+
 }
 
 .bola {
     /*Esta es la bolita que rodea al icono*/
     position: absolute;
     top: -75%;
-    left: 3.7vw;
+    left: 3.5vw;
     width: 72px;
     height: 72px;
     background: #000000;
@@ -250,6 +264,7 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
+
 }
 
 /*Tanto el ::after como el ::before nos sirven para añadir
@@ -258,19 +273,22 @@ lo hemos usado aqui porque es correcto hacerlo cuando vas a integrar
 box-shadows, y aqui hacemos las cosas bien 🙏☻♥♦☺•◘♣☻♥♠9○████■████*/
 
 .bola::before {
+
     content: '';
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: -27px;
     width: 30px;
     height: 30px;
     background: transparent;
     border-top-right-radius: 80px;
     box-shadow: 0px -10px 0 0 var(--clr);
+
 }
 
 
 .bola::after {
+
     content: '';
     position: absolute;
     top: 52%;
@@ -280,6 +298,7 @@ box-shadows, y aqui hacemos las cosas bien 🙏☻♥♦☺•◘♣☻♥♠9�
     background: transparent;
     border-top-left-radius: 80px;
     box-shadow: 0px -10px 0 0 var(--clr);
+
 }
 
 /* Estas lineas de codigo de css sirven para identificar
@@ -287,7 +306,8 @@ a los "hijos/childs" de la NavBar, siendo estos la lista
 de iconos, todo esto lo tuve que buscar por youtube
 porque no tenia ni puta idea de hacerlo, pero ahora si comprendo 🥶 */
 
-.NavBar ul li:nth-child(1).active~.bola {
+.NavBar ul li:nth-child(2).active~.bola {
+
     transform: translateX(calc(91px * 0));
     /*Aqui la palabra reservada calc es para hacer calculos
     en este caso el calculo individual para cada elemento de la lista,
