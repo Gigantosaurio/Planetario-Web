@@ -258,7 +258,7 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     /*Esta es la bolita que rodea al icono*/
     position: absolute;
     top: -75%;
-    left: 3.2vh;
+    left: 3.3vh;
     width: 65px;
     height: 65px;
     background: #000000;
