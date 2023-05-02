@@ -68,6 +68,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     font-family: 'Noto Sans', sans-serif;
+    overflow-y: hidden;
 }
 
 .text-center {
@@ -153,7 +154,7 @@ body {
 /*meter un overflow hidden pero solo a la parte de abajo ☢️☢️☢️☢️*/
 
 footer {
-    /* padding-top: 94.2vh; */
+    padding-top: 4.2vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -212,9 +213,10 @@ footer {
 
 .NavBar ul li a .icono {
     /*En esta vamos a modificar los divs llamados icono*/
+    right: 40px;
     position: relative;
     display: block;
-    line-height: 75px;
+    line-height: 66px;
     font-size: 1.8em;
     text-align: center;
     transition: 0.5s;
@@ -243,7 +245,7 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     color: var(--clr);
     opacity: 0;
     transform: translateY(20px);
-
+    right: 49px;
 }
 
 .NavBar ul li.active a .text {
@@ -256,9 +258,9 @@ que se va rotando entre los elementos de la NavBar, segun cual seleccionemos*/
     /*Esta es la bolita que rodea al icono*/
     position: absolute;
     top: -75%;
-    left: 3.5vw;
-    width: 72px;
-    height: 72px;
+    left: 3.2vh;
+    width: 65px;
+    height: 65px;
     background: #000000;
     filter: blur(2px);
     border-radius: 50%;
