@@ -13,18 +13,19 @@ togglers.forEach(element => {
 //al hipervinculo se demore medio segundo para asi que se vea la tremenada animacion que le
 //he metido a la NavBar que mola un taco
 
+//creamos la variable y la asignamos a la clase retraso-carga
 let enlacesRetrasoCarga = document.querySelectorAll('.retraso-carga');
 
-enlacesRetrasoCarga.forEach(function (enlace) {
+//declaramos la funcion con un
+enlacesRetrasoCarga.forEach(function (enlace) { //este foreach es para revisar cada elemento de la lista
     enlace.addEventListener('click', function (evento) {
-        evento.preventDefault();
-        let url = this.getAttribute('href');
-        setTimeout(function () {
+        evento.preventDefault(); //esta linea evita el default de lo que pasaria si hicieramos click en el enlace, que es basicamente que nos llevaria a la otra pagina
+        let url = this.getAttribute('href'); //aqui metemos en una variable la url de la pagina que estemos seleccionando en la NavBar
+        setTimeout(function () { //y aqui le metemos un temporizador de 500ms y despues redirigimos manualmente al usuario a la pagina que habia clicado originalmente
             window.location = url;
-        }, 500);
+        }, 500); //soy un puto genio 🥵🥵
     })
 })
-
 
 
 // script del footer
