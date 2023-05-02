@@ -8,7 +8,6 @@
 /*---------------------------HEADER---------------------------*/
 
 header {
-    /* position: absolute; */
     color: white;
     font-size: 40vh;
     font-family: 'Mukta Vaani', sans-serif;
@@ -19,10 +18,7 @@ header {
 .Solar {
     margin-top: -3%;
     display: flex;
-    /* padding-left: 100px; */
     padding-left: 5%;
-    /* height: 50vh; */
-
 }
 
 .planetario {
@@ -32,24 +28,12 @@ header {
 }
 
 .System {
-    /* margin-top: -100px; */
     margin-top: -16vw;
-    /* padding-left: 400px; */
     padding-left: 25%;
 }
 
 /*---------------------------FONDO---------------------------*/
 
-/* #fondoAnimado {
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-} */
 
 .fondo-video {
     position: fixed;
@@ -84,18 +68,13 @@ body {
 }
 
 
-/*meter un overflow hidden pero solo a la parte de abajo ☢️☢️☢️☢️*/
-
 footer {
-    padding-top: 0.1vh; 
+    padding-top: 0.1vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
     font-family: 'Poppins', sans-serif;
-    /* overflow: hidden; */
-
 }
 
 .NavBar {
@@ -115,9 +94,7 @@ footer {
 .NavBar ul {
     /*Aqui estamos editando el contenido de la ul (unordered list)*/
     display: flex;
-    /* width: 350px; */
     gap: 2rem;
-
 }
 
 
